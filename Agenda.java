@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class AgendaAnder {
+public class Agenda {
     public static void main(String[] args){
         Map<String, Integer> contactos= new HashMap<>();
         Scanner scanner = new Scanner (System.in);
