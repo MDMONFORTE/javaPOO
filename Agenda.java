@@ -50,7 +50,7 @@ public class Agenda {
                 break;
             case 6:
                 scanner.close();  
-                System.exit(0);             
+                System.exit(1);             
         }
         }
     }
