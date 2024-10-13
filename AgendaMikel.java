@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class Agenda {
+public class AgendaMikel {
 
     public void addContact(String username, String number, HashMap<String, String> contactos) {
         if (contactos.containsKey(username)) {
