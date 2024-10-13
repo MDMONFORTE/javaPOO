@@ -30,7 +30,7 @@ public class AgendaMikel {
 
     public static void main(String[] args) {
         // Crear una instancia de Agenda
-        Agenda miAgenda = new Agenda();
+        AgendaMikel miAgenda = new Agenda();
 
         // Crear un HashMap de contactos
         HashMap<String, String> contactos = new HashMap<>();
