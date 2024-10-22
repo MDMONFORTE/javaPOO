@@ -21,36 +21,35 @@ public class Agenda {
         scanner.nextLine();
 
         switch (numeroSwitch) {
-            case 1:
+            case 1 -> {
                 for (Map.Entry<String, Integer> datos : contactos.entrySet())
                     System.out.println(datos.getKey() + ": " + datos.getValue());
-                break;
-            case 2:
+                }
+            case 2 -> {
                 System.out.print("Escriba el nombre a añadir: ");
                 añadir = scanner.nextLine();
                 System.out.print("Escriba el número de teléfono:");
                 telefonillo = scanner.nextInt();
-                contactos.put(añadir, telefonillo);  
-                System.out.println(contactos);             
-                break;        
-            case 3:
+                contactos.put(añadir, telefonillo);
+                System.out.println(contactos);
+                }
+            case 3 -> {
                 System.out.print("Escriba el nombre a editar: ");
                 String editar = scanner.nextLine();
                 System.out.print("Escriba el nuevo número de teléfono:");
                 telefonillo = scanner.nextInt();
-                contactos.put(editar, telefonillo);                  
-                break;
-            case 4:
+                contactos.put(editar, telefonillo);
+                }
+            case 4 -> {
                 System.out.print("Escriba el nombre a eliminar: ");
-                String eliminar = scanner.nextLine();    
-                contactos.remove(eliminar);           
-                break;
-            case 5:  
-                contactos.clear();             
-                break;
-            case 6:
-                scanner.close();  
-                System.exit(1);             
+                String eliminar = scanner.nextLine();
+                contactos.remove(eliminar);
+                }
+            case 5 -> contactos.clear();
+            case 6 -> {
+                scanner.close();
+                System.exit(1);
+                }             
         }
         }
     }
